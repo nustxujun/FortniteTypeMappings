@@ -7991,6 +7991,10 @@
       "name": "bHasStaticPermutationResource",
       "type": "BoolProperty"
     },
+    "12": {
+      "name": "bOverrideSubsurfaceProfile",
+      "type": "BoolProperty"
+    },
     "13": {
       "name": "ScalarParameterValues",
       "type": "ArrayProperty",
@@ -8024,30 +8028,56 @@
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
     },
+    "22": {
+      "name": "bTextureStreamingDataSorted",
+      "type": "BoolProperty"
+    },
+    "23": {
+      "name": "TextureStreamingDataVersion",
+      "type": "IntProperty"
+    },
     "24": {
       "name": "TextureStreamingData",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
-      "structType": "PhysicalMaterialMask"
-    }
-  },
-  "PhysicalMaterialMask": {
-    "0": {
-      "name": "SamplingScale",
-      "type": "FloatProperty"
-    },
-    "1": {
-      "name": "UVChannelIndex",
-      "type": "IntProperty"
-    },
-    "2": {
-      "name": "TextureName",
-      "type": "NameProperty"
+      "structType": "MaterialTextureInfo"
     }
   },
   "MaterialInstanceBasePropertyOverrides": {
+    "0": {
+      "name": "bOverride_OpacityMaskClipValue",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "bOverride_BlendMode",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "bOverride_ShadingModel",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "bOverride_DitheredLODTransition",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bOverride_CastDynamicShadowAsMasked",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "bOverride_TwoSided",
+      "type": "BoolProperty"
+    },
     "6": {
       "name": "TwoSided",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "DitheredLODTransition",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "bCastDynamicShadowAsMasked",
       "type": "BoolProperty"
     },
     "9": {
@@ -8430,6 +8460,10 @@
       "name": "TranslucencyDirectionalLightingIntensity",
       "type": "FloatProperty"
     },
+    "51": {
+      "name": "bTangentSpaceNormal",
+      "type": "BoolProperty"
+    },
     "55": {
       "name": "bUsedWithSkeletalMesh",
       "type": "BoolProperty"
@@ -8458,12 +8492,44 @@
       "name": "bUsedWithNiagaraMeshParticles",
       "type": "BoolProperty"
     },
+    "63": {
+      "name": "bUsedWithGeometryCache",
+      "type": "BoolProperty"
+    },
+    "64": {
+      "name": "bUsedWithStaticLighting",
+      "type": "BoolProperty"
+    },
     "67": {
       "name": "bUsedWithInstancedStaticMeshes",
       "type": "BoolProperty"
     },
     "76": {
       "name": "bAutomaticallySetUsageInEditor",
+      "type": "BoolProperty"
+    },
+    "77": {
+      "name": "bFullyRough",
+      "type": "BoolProperty"
+    },
+    "78": {
+      "name": "bUseFullPrecision",
+      "type": "BoolProperty"
+    },
+    "79": {
+      "name": "bUseLightmapDirectionality",
+      "type": "BoolProperty"
+    },
+    "80": {
+      "name": "bForwardRenderUsePreintegratedGFForSimpleIBL",
+      "type": "IntProperty"
+    },
+    "81": {
+      "name": "bUseHQForwardReflections",
+      "type": "BoolProperty"
+    },
+    "82": {
+      "name": "bUsePlanarForwardReflections",
       "type": "BoolProperty"
     },
     "87": {
@@ -9321,6 +9387,10 @@
     }
   },
   "StaticMesh": {
+    "0": {
+      "name": "Unknown",
+      "type": "NameProperty"
+    },
     "2": {
       "name": "StaticMaterials",
       "type": "ArrayProperty",
@@ -9338,6 +9408,19 @@
     "5": {
       "name": "LightMapCoordinateIndex",
       "type": "IntProperty"
+    },
+    "6": {
+      "name": "DistanceFieldSelfShadowBias",
+      "type": "FloatProperty"
+    },    
+    "8": {
+      "name": "LODForCollision",
+      "type": "IntProperty"
+    },
+    "17": {
+      "name": "Sockets",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
     },
     "20": {
       "name": "ExtendedBounds",
