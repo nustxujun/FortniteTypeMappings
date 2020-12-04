@@ -8460,8 +8460,16 @@
       "name": "TranslucencyDirectionalLightingIntensity",
       "type": "FloatProperty"
     },
+    "48": {
+      "name": "bDisableDepthTest",
+      "type": "BoolProperty"
+    },
     "51": {
       "name": "bTangentSpaceNormal",
+      "type": "BoolProperty"
+    },
+    "54": {
+      "name": "bUsedAsSpecialEngineMaterial",
       "type": "BoolProperty"
     },
     "55": {
@@ -8500,8 +8508,16 @@
       "name": "bUsedWithStaticLighting",
       "type": "BoolProperty"
     },
+    "66": {
+      "name": "bUsedWithSplineMeshes",
+      "type": "BoolProperty"
+    },
     "67": {
       "name": "bUsedWithInstancedStaticMeshes",
+      "type": "BoolProperty"
+    },
+    "68": {
+      "name": "bUsedWithGeometryCollections",
       "type": "BoolProperty"
     },
     "76": {
